@@ -1,0 +1,12 @@
+E:\source\virtKey\maiKey\bin\x64\Debug\maiKey.exe.config
+E:\source\virtKey\maiKey\bin\x64\Debug\maiKey.exe
+E:\source\virtKey\maiKey\bin\x64\Debug\maiKey.pdb
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.AssemblyReference.cache
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.Controller.resources
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.extraKey.resources
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.Key.resources
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.GenerateResource.cache
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.CoreCompileInputs.cache
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.exe
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.pdb
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.Properties.Resources.resources

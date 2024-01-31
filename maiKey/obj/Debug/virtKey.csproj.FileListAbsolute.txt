@@ -1,0 +1,11 @@
+E:\source\virtKey\virtKey\bin\Debug\virtKey.exe.config
+E:\source\virtKey\virtKey\bin\Debug\virtKey.exe
+E:\source\virtKey\virtKey\bin\Debug\virtKey.pdb
+E:\source\virtKey\virtKey\obj\Debug\virtKey.csproj.AssemblyReference.cache
+E:\source\virtKey\virtKey\obj\Debug\virtKey.Properties.Resources.resources
+E:\source\virtKey\virtKey\obj\Debug\virtKey.csproj.GenerateResource.cache
+E:\source\virtKey\virtKey\obj\Debug\virtKey.csproj.CoreCompileInputs.cache
+E:\source\virtKey\virtKey\obj\Debug\virtKey.exe
+E:\source\virtKey\virtKey\obj\Debug\virtKey.pdb
+E:\source\virtKey\virtKey\obj\Debug\virtKey.controller.resources
+E:\source\virtKey\virtKey\obj\Debug\virtKey.key.resources
