@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c6801f-1615-4d90-a632-b8435bd4b43a" name="更改" comment="" />
+    <list default="true" id="d6c6801f-1615-4d90-a632-b8435bd4b43a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.virtKey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.virtKey/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/maiKey/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/maiKey/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maiKey/extraKey.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/maiKey/extraKey.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maiKey/extraKey.resx" beforeDir="false" afterPath="$PROJECT_DIR$/maiKey/extraKey.resx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1175e77e945b418ebce4dea98d1883fd5b6520/00/c2946fdf/Keys.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -79,14 +85,37 @@
       <option name="presentableId" value="Default" />
       <updated>1706707868249</updated>
       <workItem from="1706707873242" duration="399000" />
-      <workItem from="1706708310155" duration="5294000" />
+      <workItem from="1706708310155" duration="6424000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化提交">
+      <option name="closed" value="true" />
+      <created>1706716836557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706716836557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="初始化提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化提交" />
   </component>
 </project>

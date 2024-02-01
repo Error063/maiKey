@@ -45,6 +45,7 @@ namespace maiKey
             this.lockLocation = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.showExtraKey = new System.Windows.Forms.Button();
+            this.changeKeySetBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.radiusBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radiusNum)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -75,11 +76,12 @@ namespace maiKey
             // keySetTipsLab
             // 
             this.keySetTipsLab.AutoSize = true;
-            this.keySetTipsLab.Location = new System.Drawing.Point(21, 94);
+            this.keySetTipsLab.Location = new System.Drawing.Point(168, 97);
             this.keySetTipsLab.Name = "keySetTipsLab";
-            this.keySetTipsLab.Size = new System.Drawing.Size(431, 54);
+            this.keySetTipsLab.Size = new System.Drawing.Size(233, 72);
             this.keySetTipsLab.TabIndex = 2;
-            this.keySetTipsLab.Text = "当前键位布局：\r\n操作键：#controlKeyPairs#（从上到下，从左到右）\r\n选择键： #selectKey#";
+            this.keySetTipsLab.Text = "当前键位布局：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
+            this.keySetTipsLab.Click += new System.EventHandler(this.keySetTipsLab_Click);
             // 
             // label2
             // 
@@ -237,11 +239,22 @@ namespace maiKey
             this.showExtraKey.UseVisualStyleBackColor = true;
             this.showExtraKey.Click += new System.EventHandler(this.showExtraKey_Click);
             // 
+            // changeKeySetBtn
+            // 
+            this.changeKeySetBtn.Location = new System.Drawing.Point(24, 97);
+            this.changeKeySetBtn.Name = "changeKeySetBtn";
+            this.changeKeySetBtn.Size = new System.Drawing.Size(121, 56);
+            this.changeKeySetBtn.TabIndex = 9;
+            this.changeKeySetBtn.Text = "修改键位布局";
+            this.changeKeySetBtn.UseVisualStyleBackColor = true;
+            this.changeKeySetBtn.Click += new System.EventHandler(this.changeKeySetBtn_Click);
+            // 
             // Key
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(447, 559);
+            this.Controls.Add(this.changeKeySetBtn);
             this.Controls.Add(this.showExtraKey);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -282,5 +295,6 @@ namespace maiKey
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar angleBar;
         private System.Windows.Forms.NumericUpDown angleNum;
+        private Button changeKeySetBtn;
     }
 }

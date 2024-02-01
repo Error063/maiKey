@@ -2,35 +2,41 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace maiKey
 {
     public partial class Key : Form
     {
+        private Utils.AppConfig appConfig = new Utils.AppConfig();
         private List<Form> _keyForms = new List<Form>();
-        private readonly int[] _keys = new int[] { 'Q','W','A','E','Z','D','X','C','3' };
+        //private readonly int[] _keys = new int[] { 'Q','W','A','E','Z','D','X','C','3' };
         private bool _isClosed = true;
         public Key()
         {
             InitializeComponent();
             ShowKeySetTips();
+            radiusBar.Value = appConfig.config.btnRadius;
+            radiusNum.Value = Convert.ToDecimal(appConfig.config.btnRadius);
+            angleBar.Value = Convert.ToInt32(appConfig.config.btnAngle * 10);
+            angleNum.Value = Convert.ToDecimal(appConfig.config.btnAngle);
         }
 
         private void ShowKeySetTips()
         {
-            string template = "当前键位布局：\r\n操作键：#controlKeyPairs#（从上到下，从左到右）\r\n选择键： #selectKey#";
+            string template = "当前键位布局：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
             StringBuilder keySb = new StringBuilder();
-            for (int i = 0; i < _keys.Length-1; i++)
+            for (int i = 0; i < appConfig.config.keyset.Count - 1; i++)
             {
                 if(i%2==0)
                 {
                     keySb.Append(' ');
                 }
-                keySb.Append((char)_keys[i]);
+                keySb.Append((char)appConfig.config.keyset[i]);
             }
             keySetTipsLab.Text = template
-                .Replace("#selectKey#", ((char)_keys[_keys.Length - 1]).ToString())
+                .Replace("#selectKey#", ((char)appConfig.config.keyset[appConfig.config.keyset.Count - 1]).ToString())
                 .Replace("#controlKeyPairs#", keySb.ToString());
         }
 
@@ -38,7 +44,7 @@ namespace maiKey
         {
             if (_isClosed)
             {
-                if (_keys.Length != 9)
+                if (appConfig.config.keyset.Count != 9)
                 {
                     MessageBox.Show(@"自定义键位长度错误！");
 
@@ -46,7 +52,7 @@ namespace maiKey
                 else
                 {
                     _isClosed = false;
-                    foreach(int c in _keys)
+                    foreach(int c in appConfig.config.keyset)
                     {
                         Form form = new Controller(c);
                         _keyForms.Add(form);
@@ -154,14 +160,21 @@ namespace maiKey
                 }
                 lockLocation.Checked = true;
             }
-            else if(_isClosed)
+            else if (_isClosed)
             {
                 MessageBox.Show(@"当前未打开任何虚拟按键窗口！");
             }
-            else if(lockLocation.Checked)
+            else if (lockLocation.Checked)
             {
                 MessageBox.Show(@"当前布局已锁定！");
             }
+            new Thread(() =>
+            {
+                appConfig.config.btnAngle = Convert.ToDouble(angleNum.Value);
+                appConfig.config.btnRadius = Convert.ToInt32(radiusNum.Value);
+                appConfig.save();
+            }).Start();
+
         }
 
         private void angleBar_Scroll(object sender, EventArgs e)
@@ -179,6 +192,16 @@ namespace maiKey
         private void showExtraKey_Click(object sender, EventArgs e)
         {
             new extraKey().Show();
+        }
+
+        private void changeKeySetBtn_Click(object sender, EventArgs e)
+        {
+            new changeKeyset(appConfig).Show();
+        }
+
+        private void keySetTipsLab_Click(object sender, EventArgs e)
+        {
+            ShowKeySetTips();
         }
     }
 }

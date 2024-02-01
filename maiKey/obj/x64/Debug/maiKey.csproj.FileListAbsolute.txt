@@ -10,3 +10,16 @@ E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.CoreCompileInputs.cache
 E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.exe
 E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.pdb
 E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.Properties.Resources.resources
+E:\source\virtKey\maiKey\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Buffers.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Memory.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Numerics.Vectors.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Text.Encodings.Web.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Text.Json.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+E:\source\virtKey\maiKey\bin\x64\Debug\System.ValueTuple.xml
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.CopyComplete
+E:\source\virtKey\maiKey\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.csproj.Fody.CopyLocal.cache
+E:\source\virtKey\maiKey\obj\x64\Debug\maiKey.changeKeyset.resources
