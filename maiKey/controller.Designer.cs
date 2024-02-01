@@ -55,7 +55,7 @@ namespace maiKey
             // 
             // closeBtn
             // 
-            this.closeBtn.Location = new System.Drawing.Point(158, 12);
+            this.closeBtn.Location = new System.Drawing.Point(144, 12);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(137, 64);
             this.closeBtn.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace maiKey
             // 
             // showBtn
             // 
-            this.showBtn.Location = new System.Drawing.Point(24, 12);
+            this.showBtn.Location = new System.Drawing.Point(10, 12);
             this.showBtn.Name = "showBtn";
             this.showBtn.Size = new System.Drawing.Size(121, 64);
             this.showBtn.TabIndex = 1;
@@ -76,17 +76,17 @@ namespace maiKey
             // keySetTipsLab
             // 
             this.keySetTipsLab.AutoSize = true;
-            this.keySetTipsLab.Location = new System.Drawing.Point(168, 97);
+            this.keySetTipsLab.Location = new System.Drawing.Point(141, 97);
             this.keySetTipsLab.Name = "keySetTipsLab";
-            this.keySetTipsLab.Size = new System.Drawing.Size(233, 72);
+            this.keySetTipsLab.Size = new System.Drawing.Size(278, 72);
             this.keySetTipsLab.TabIndex = 2;
-            this.keySetTipsLab.Text = "当前键位布局：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
+            this.keySetTipsLab.Text = "当前键位布局（点击即可刷新）：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
             this.keySetTipsLab.Click += new System.EventHandler(this.keySetTipsLab_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 186);
+            this.label2.Location = new System.Drawing.Point(7, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(404, 36);
             this.label2.TabIndex = 3;
@@ -231,7 +231,7 @@ namespace maiKey
             // 
             // showExtraKey
             // 
-            this.showExtraKey.Location = new System.Drawing.Point(301, 12);
+            this.showExtraKey.Location = new System.Drawing.Point(297, 12);
             this.showExtraKey.Name = "showExtraKey";
             this.showExtraKey.Size = new System.Drawing.Size(135, 64);
             this.showExtraKey.TabIndex = 8;
@@ -241,7 +241,7 @@ namespace maiKey
             // 
             // changeKeySetBtn
             // 
-            this.changeKeySetBtn.Location = new System.Drawing.Point(24, 97);
+            this.changeKeySetBtn.Location = new System.Drawing.Point(10, 97);
             this.changeKeySetBtn.Name = "changeKeySetBtn";
             this.changeKeySetBtn.Size = new System.Drawing.Size(121, 56);
             this.changeKeySetBtn.TabIndex = 9;

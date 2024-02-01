@@ -25,7 +25,7 @@ namespace maiKey
 
         private void ShowKeySetTips()
         {
-            string template = "当前键位布局：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
+            string template = "当前键位布局（点击即可刷新）：\r\n操作键：#controlKeyPairs#\r\n（从上到下，从左到右）\r\n选择键： #selectKey#";
             StringBuilder keySb = new StringBuilder();
             for (int i = 0; i < appConfig.config.keyset.Count - 1; i++)
             {
