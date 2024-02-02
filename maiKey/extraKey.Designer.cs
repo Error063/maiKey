@@ -31,6 +31,7 @@ namespace maiKey
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(extraKey));
             this.testBtn_F1 = new System.Windows.Forms.Button();
             this.serviceBtn_F2 = new System.Windows.Forms.Button();
             this.virtualReaderBtn = new System.Windows.Forms.Button();
@@ -98,6 +99,7 @@ namespace maiKey
             this.Controls.Add(this.virtualReaderBtn);
             this.Controls.Add(this.serviceBtn_F2);
             this.Controls.Add(this.testBtn_F1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "extraKey";
